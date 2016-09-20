@@ -12,6 +12,6 @@ git add .
 echo "----Making the commit $1..."
 git commit -m $1
 echo "----Pushing..."
-git push $repo_name master
+git push -u $repo_name master
 # cum rezolv faza cu credentialele...?
 echo "----Git Hub updated succesfully!"
