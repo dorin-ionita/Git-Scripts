@@ -4,14 +4,14 @@
 #initGit.sh [name] [url] [commit_msg]
 
 echo "----Making directory to store introduced data..."
-mkdir Gitinfo
+mkdir cfg_git
 echo "----Saving the name of the repository (used locally)..."
-[ -f ./Gitinfo/Repo_name.txt ] && 
+[ -f ./cfg_git/Repo_name.txt ] && 
 	echo "There was another name for the repo allready saved to the file." ||
 	echo $1 >> ./Gitinfo/Repo_name.txt
 	
 echo "----Saving the GitHub URL of the repository..."
-[ -f ./Gitinfo/Repo_url.txt ] && 
+[ -f ./cfg_git/Repo_url.txt ] && 
 	echo "There was another URL for the repo allready saved to the file." ||
 	echo $2 >> ./Gitinfo/Repo_url.txt
 	
