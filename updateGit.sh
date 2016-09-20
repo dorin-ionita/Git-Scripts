@@ -6,7 +6,7 @@
 repo_name=$(<./cfg_git/Repo_name.txt)
 # Read the name cfg for git for repository
 # from file
-echo $repo_name
+echo "$repo_name"
 
 echo "----Adding files..."
 git add .
