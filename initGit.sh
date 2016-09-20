@@ -6,12 +6,15 @@
 echo "----Making directory to store introduced data..."
 mkdir Gitinfo
 echo "----Saving the name of the repository (used locally)..."
-[ -f ./Gitinfo/Repo_name.txt ] && echo $1 >> ./Gitinfo/Repo_name.txt ||
-	echo "There was another name for the repo allready saved to the file."
+[ -f ./Gitinfo/Repo_name.txt ] && 
+	echo "There was another name for the repo allready saved to the file." ||
+	echo $1 >> ./Gitinfo/Repo_name.txt
+	
 echo "----Saving the GitHub URL of the repository..."
-[ -f ./Gitinfo/Repo_url.txt ] && echo $2 >> ./Gitinfo/Repo_url.txt ||
-	echo "There was another URL for the repo allready saved to the file."
-
+[ -f ./Gitinfo/Repo_url.txt ] && 
+	echo "There was another URL for the repo allready saved to the file." ||
+	echo $2 >> ./Gitinfo/Repo_url.txt
+	
 echo "---Starting initialization..."
 git init
 echo "---Remotely adding the repo with the name $1..."
