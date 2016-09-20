@@ -8,6 +8,9 @@ repo_name=$(<./cfg_git/Repo_name.txt)
 # from file
 echo "$repo_name"
 
+echo "----"
+echo "----"
+echo "----"
 echo "----Adding files..."
 git add .
 echo "----Making the commit $1..."
