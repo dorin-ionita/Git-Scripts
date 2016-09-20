@@ -2,3 +2,4 @@ https://github.com/dorin-ionita/Git-Scripts
 https://github.com/dorin-ionita/Git-Scripts
 https://github.com/dorin-ionita/Git-Scripts
 https://github.com/dorin-ionita/Git-Scripts
+http://github.com/dorin-ionita/Git-Scripts
