@@ -3,7 +3,7 @@
 #HOW TO USE:
 #updateGit.sh [commit_msg]
 
-$repo_name=$(<./cfg_git/Repo_name.txt)
+repo_name=$(<./cfg_git/Repo_name.txt)
 # Read the name cfg for git for repository
 # from file
 echo "$repo_name"
