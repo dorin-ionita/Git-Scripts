@@ -1,16 +1,17 @@
 #!/bin/sh
 
+#HOW TO USE:
+#updateGit.sh [commit_msg]
+
+repo_name=$(<./cfg_git/Repo_name.txt)
+# Read the name cfg for git for repository
+# from file
+
 echo "----Adding files..."
-git add Readme.txt
-git add graphicInterface.py
-git add main.py
-git add mySqlDBInterface.py
-git add scheduler.py
-git add updateGitHub.sh
-git add ./cfg/start_date.cfg
+git add .
 echo "----Making the commit $1..."
 git commit -m $1
 echo "----Pushing..."
-git push origin master
+git push $repo_name master
 # cum rezolv faza cu credentialele...?
 echo "----Git Hub updated succesfully!"
