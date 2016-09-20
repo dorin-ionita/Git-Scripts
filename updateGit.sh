@@ -6,12 +6,6 @@
 repo_name=$(cat ./cfg_git/Repo_name.txt)
 # Read the name cfg for git for repository
 # from file
-echo "$repo_name"
-
-echo "----"
-echo "----"
-echo "----"
-echo "----Adding files..."
 git add .
 echo "----Making the commit $1..."
 git commit -m $1
